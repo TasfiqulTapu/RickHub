@@ -1,4 +1,5 @@
-// souce for this fix: https://stackoverflow.com/a/25721457
+// souce for this fix:
+// https://stackoverflow.com/a/25721457
 document.addEventListener('DOMContentLoaded', function() {
     console.log("i heared u")
     document.getElementById("verify").addEventListener("click", begin);
@@ -9,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         let v = document.getElementById("video");
         v.style.display = "flex";
-        v.play();
         v.style.marginTop = `${window.innerHeight/2 - v.offsetHeight/2}px`;
+        v.play();
     }
 });
