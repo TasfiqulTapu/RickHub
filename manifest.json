@@ -1,9 +1,9 @@
 {
     "manifest_version":2,
     "name": "RickHub",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "description": "Watch the hottest videos 🔥🔥🔥",
-    "web_accessible_resources":  [ "index.html" ],
+    "web_accessible_resources":  [ "index.html" , "script.js", "video.mp4"],
     "content_scripts": [
         {
             "matches": ["*://*.wikipedia.org/*","*://*.pornhub.com/*"],

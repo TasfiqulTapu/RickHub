@@ -6,18 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RickHub</title>
     <style>
+        :root{
+            --ph-orange: #ffa31a; 	
+            --grey-80: #808080; 	
+            --black-light: #292929;
+            --black-dark: #1b1b1b;
+            --text-white: #ffffff;
+        }
         body{
+            background-color: var(--black-dark);
+            color: var(--text-white);
             min-width: 100vw;
             min-height: 100vh;
-            color: aliceblue;
+            font-size: larger;
             text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            overflow: hidden;
+        }
+        #name{
+            display: flex;
+            justify-content: center;
+            margin-top: 20vh;
+        }
+        #hub{
+            background-color: var(--ph-orange);
+            color: var(--black-dark);
+            border-radius: 2px;
+        }
+        #verify{
+            color: var(--text-white);
+            font-size: large;
+            background-color: var(--grey-80);
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 2px;
+        }
+        #video{
+            margin: auto;
+            display: none;
         }
     </style>
+    <script src="/script.js"></script>
 </head>
 <body>
-    <h1>Never Gonna give you up</h1>
-    <h1>Age Verification</h1>
-    <p>Pornhub is an adult community that contains age-restricted content.</p><br>You must be 18 years old or over to enter.</p>
-    <button>I am 18 or older - Enter</button>
+    <div id="name" class="initial">
+        <h2 id="porn">Porn</h2>
+        <h2 id="hub">Hub</h2>
+    </div>
+    <h1 class="initial">Age Verification</h1>
+    <p class="initial">Pornhub is an adult community that contains age-restricted content.<br>You must be 18 years old or over to enter.</p>
+    <button id="verify" class="initial">I am 18 or older - Enter</button>
+    <video controls disablepictureinpicture src="video.mp4" id="video">Cheeky bastard got saved by shitty browser</video>
 </body>
 </html>
